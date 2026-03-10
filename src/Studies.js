@@ -5,15 +5,6 @@ const Studies = () => {
 
     const defaultTexts = [
         {
-            title: "Excel Engineering college",
-            role: "Computer Science Engineering",
-            date: 'AUG 2025 - APR 2028',
-            task: [
-                "I gained strong foundations in algorithms, data structures, and system design. Through coursework and projects, I have developed practical experience in software development and complex problem-solving.",
-                "My studies culminated in the development of a <a>capstone thesis</a> on a synchronous assessment module for educational platforms, showcasing my ability to lead a project from conception to completion. href=/thesis.pdf"
-            ]
-        },
-        {
             title: "Sri Ramakrishana Mission Vidyalaya polytechnic college",
             role: "Diploma in Electrical and Electronics Engineering",
             date: 'JUN 2023 - APR 2023',
@@ -23,7 +14,17 @@ const Studies = () => {
 
             ],
 
+        },
+        {
+            title: "Excel Engineering college",
+            role: "Computer Science Engineering",
+            date: 'AUG 2025 - APR 2028',
+            task: [
+                "I gained strong foundations in algorithms, data structures, and system design. Through coursework and projects, I have developed practical experience in software development and complex problem-solving.",
+                "My studies culminated in the development of a <a>capstone thesis</a> on a synchronous assessment module for educational platforms, showcasing my ability to lead a project from conception to completion. href=/thesis.pdf"
+            ]
         }
+        
     ]
         .reverse()
 
