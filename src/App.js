@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Footer from "./Footer"
 import { Galaxy } from 'react-stars-particles'
 
+
 function App() {
   return (
     <div className="App">
