@@ -81,6 +81,11 @@ span {
   width: 430px;
 }
 
+.certificates .title::after{
+  margin-left: 230px;
+  width: 380px;
+}
+
 .contact .title::after {
   margin-left: 160px;
   width: 450px;
@@ -190,7 +195,7 @@ a {
   text-align: center;
 }
 
-.session-wrapper, .footer-wrapper, .projects-wrapper, .table-wrapper, .contact-wrapper{
+.session-wrapper, .footer-wrapper, .projects-wrapper, .certificates-wrapper, .table-wrapper, .contact-wrapper{
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -222,7 +227,7 @@ a {
   color: #a8a8a8;
 }
 
-.about, .xp, .studies, .projects, .freelancer-projects {
+.about, .xp, .studies, .projects, .certificates, .freelancer-projects {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -406,6 +411,165 @@ a {
 .projects, .freelancer-projects {
   height: fit-content;
   margin-bottom: 50px;
+}
+
+.certificates-wrapper {
+  height: fit-content;
+  padding: 30px 0 100px;
+  overflow: hidden;
+}
+
+.certificates {
+  height: fit-content;
+}
+
+.certificates-carousel {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.certificates-area {
+  width: 100%;
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 14px 0;
+  margin: -14px 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.certificates-area::-webkit-scrollbar {
+  display: none;
+}
+
+.certificate-card {
+  flex: 0 0 calc((100% - 44px) / 3);
+  min-height: 360px;
+  border: 1px solid rgba(211, 211, 213, 0.18);
+  background: rgba(13, 0, 36, 0.86);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  scroll-snap-align: start;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.certificate-scroll-button {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+}
+
+.certificate-scroll-button svg {
+  font-size: 46px;
+}
+
+.certificate-scroll-button:hover {
+  color: #ff5f00;
+  background-color: rgba(13, 0, 36, 0.68);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.certificate-scroll-left {
+  left: -70px;
+}
+
+.certificate-scroll-right {
+  right: -70px;
+}
+
+.certificate-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255, 95, 0, 0.65);
+  box-shadow: 0 24px 55px rgba(255, 95, 0, 0.14);
+}
+
+.certificate-image {
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #16132f, #2b244a);
+}
+
+.certificate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #ffffff;
+  display: block;
+}
+
+.certificate-image-glow {
+  width: 170px;
+  height: 95px;
+  position: absolute;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transform: rotate(-8deg);
+}
+
+.certificate-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 72px !important;
+  color: #ffffff;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+}
+
+.certificate-image span {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.certificate-content {
+  min-height: 170px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certificate-content h3 {
+  color: #d3d3d5;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.certificate-content span {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .projects-area {
@@ -873,6 +1037,66 @@ a {
     width: 90vw;
     height: fit-content;
   }
+
+  .certificates {
+    width: 90vw;
+    height: fit-content;
+  }
+
+  .certificates-wrapper {
+    padding: 20px 0 70px;
+  }
+
+  .certificates-area {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 14px 0 18px;
+    margin: -14px 0 0;
+    scroll-snap-type: x mandatory;
+  }
+
+  .certificate-scroll-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(13, 0, 36, 0.72);
+  }
+
+  .certificate-scroll-button svg {
+    font-size: 40px;
+  }
+
+  .certificate-scroll-left {
+    left: 8px;
+  }
+
+  .certificate-scroll-right {
+    right: 8px;
+  }
+
+  .certificates-area::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .certificates-area::-webkit-scrollbar-track {
+    background: #0D0024;
+  }
+
+  .certificates-area::-webkit-scrollbar-thumb {
+    background: #ff5f00;
+  }
+
+  .certificate-card {
+    flex: 0 0 82vw;
+    min-width: 82vw;
+    min-height: 340px;
+    scroll-snap-align: center;
+  }
+
+  .certificate-image {
+    height: 175px;
+  }
   
   .projects-area {
     width: 100%;
@@ -960,8 +1184,16 @@ a {
     width: calc(85vw - 180px);
   }
 
+  .certificates .title::after{
+    width: calc(85vw - 230px);
+  }
+
   .projects .title {
     margin-bottom: -20px;
+  }
+
+  .certificates .title {
+    margin-bottom: 30px;
   }
 
   .contact .title::after {
