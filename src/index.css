@@ -421,10 +421,17 @@ a {
 
 .certificates {
   height: fit-content;
+  width: min(1000px, 90vw);
+  margin: 0 auto;
+}
+
+.certificates > div {
+  width: 100%;
 }
 
 .certificates-carousel {
   width: 100%;
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -468,12 +475,12 @@ a {
   height: 46px;
   border: none;
   border-radius: 50%;
-  background: transparent;
+  background: rgba(13, 0, 36, 0.72);
   color: #ffffff;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,11 +499,11 @@ a {
 }
 
 .certificate-scroll-left {
-  left: -70px;
+  left: -58px;
 }
 
 .certificate-scroll-right {
-  right: -70px;
+  right: -58px;
 }
 
 .certificate-card:hover {
