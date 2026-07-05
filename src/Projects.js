@@ -8,12 +8,32 @@ import wedding from './assets/wedding.png'
 import wiki from './assets/wiki.png'
 import multiverse from './assets/multiverse.png'
 import profileapp from './assets/profileapp.png'
+import datastory from './assets/datastory.png'
 
 
 
 const Projects = () => {
 
     const projectsInfos = [
+        {
+            title: 'DataStory AI',
+            photo: datastory,
+            description: 'Fresh Mart is a full-stack groceries shopping website designed to provide users with a convenient and efficient online shopping experience for daily essentials. The platform allows customers to browse product categories, view detailed descriptions and prices, add items to their cart, and complete secure checkout, ensuring a smooth and reliable shopping process from selection to delivery.',
+            github: 'https://github.com/sanjaiarivu/DataStory',
+            link: 'https://sample',
+            tools: [
+                'JavaScript',
+                'React',
+                'Html',
+                'Css',
+                'Java',
+                'Spring Boot',
+                'Thymeleaf',
+                'MySQL',
+
+
+            ]
+        },
         {
             title: 'Fresh mart',
             photo: profileapp,
@@ -42,22 +62,6 @@ const Projects = () => {
             ]
         },
         {
-            title: 'MY love Movies',
-            photo: wiki,
-            description: 'MY Love Movies is a full-stack web application built using Java, Spring Boot, Thymeleaf, and MySQL, designed for movie enthusiasts to explore and manage their favorite films. The platform enables users to browse movie collections, view detailed information, create personalized watchlists, and securely store data through a robust backend and database integration, delivering a seamless and dynamic user experience.',
-            github: 'https://github.com/sanjaiarivu/SpringCRUD',
-            link: 'https://sample',
-            tools: [
-
-                'Thymeleaf',
-                'Html',
-                'CSS',
-                'Java',
-                'Spring boot',
-                'My SQL'
-            ]
-        },
-        {
             title: 'Portfolio',
             photo: wedding,
             description: 'My Portfolio is a modern and responsive web application built using React, designed to showcase my projects, technical skills, and achievements in an interactive way. The platform highlights my development experience through dynamic components, smooth navigation, and a clean user interface, providing visitors with a professional overview of my work and capabilities.',
@@ -73,19 +77,20 @@ const Projects = () => {
     ]
 
     const minorProjects = [
-        // {
-        //     title: 'tagnalyzer',
-        //     description: 'a webapp that provides Last.fm users with detailed insights into their listening habits by analyzing the tags associated with their favorite artists.',
-        //     github: 'https://github.com/hugofolloni/tagnalyzer',
-        //     link: 'https://tagnalyzer.vercel.app',
-        //     tools: [
-        //         'TypeScript',
-        //         'React',
-        //         'Next.js',
-        //         'Sass',
-        //         'Redux'
-        //     ]
-        // },
+        {
+            title: 'MY love Movies',
+            description: 'MY Love Movies is a full-stack web application built using Java, Spring Boot, Thymeleaf, and MySQL, designed for movie enthusiasts to explore and manage their favorite films. The platform enables users to browse movie collections, view detailed information, create personalized watchlists, and securely store data through a robust backend and database integration, delivering a seamless and dynamic user experience.',
+            github: 'https://github.com/sanjaiarivu/SpringCRUD',
+            link: '',
+            tools: [
+                'Java',
+                'Spring Boot',
+                'Thymeleaf',
+                'MySQL'
+                
+            ]
+        
+        },
         // {
         //     title: 'react-stars-particles',
         //     description: 'a captivating React component that brings a dynamic and interactive galaxy background to your web pages. With stars that are attracted to the mouse pointer and smooth animations, it offers a unique and engaging user experience.',
