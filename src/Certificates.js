@@ -11,6 +11,7 @@ import AWS from "./assets/AWS.jpg";
 import DataAnalytics from "./assets/DataAnalytics.jpg";
 import gitUnstop from "./assets/gitUnstop.jpg";
 import NISM from "./assets/NISM.jpg";
+import nvidia from "./assets/NVIDIA.jpg";
 
 const Certificates = () => {
     const certificatesRef = useRef(null);
@@ -28,6 +29,13 @@ const Certificates = () => {
             issuedBy: "Google for Education",
             issueDate: "May 2026",
             image: GeminiStudent,
+            accent: "certificate-card-blue",
+        },
+         {
+            name: "Getting Started with AI on Jetson Nano",
+            issuedBy: "Nvidia",
+            issueDate: "July 2026",
+            image: nvidia,
             accent: "certificate-card-blue",
         },
         {
