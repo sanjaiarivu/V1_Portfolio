@@ -5,7 +5,6 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import styled, { keyframes } from "styled-components";
 
 import wedding from './assets/wedding.png'
-import wiki from './assets/wiki.png'
 import multiverse from './assets/multiverse.png'
 import profileapp from './assets/profileapp.png'
 import datastory from './assets/datastory.png'
