@@ -119,7 +119,7 @@ span {
   justify-content: flex-start;
 }
 
-.nav span {
+.nav a {
   font-size: 12px;
   text-decoration: none;
   color: #eaeaea;
@@ -172,7 +172,7 @@ a {
   height: 100%;
 }
 
-.home span {
+.home span, .home h1 {
   color: #d3d3d5;
 }
 

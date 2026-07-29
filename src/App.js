@@ -16,14 +16,16 @@ function App() {
     <div className="App">
       <Galaxy color='#2f2f2f' quantity={300} />
       <Header />
-      <Home id="home" />
-      <About />
-      <Experience />
-      <Studies />
-      <Projects />
-      <Certificates />
-      {/* <Freelancer /> */}
-      <Contact />
+      <main>
+        <Home />
+        <About />
+        <Experience />
+        <Studies />
+        <Projects />
+        <Certificates />
+        {/* <Freelancer /> */}
+        <Contact />
+      </main>
       <Footer />
     </div>
   );

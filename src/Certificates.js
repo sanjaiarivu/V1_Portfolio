@@ -90,9 +90,9 @@ const Certificates = () => {
     };
 
     return (
-        <div className="certificates-wrapper">
+        <section className="certificates-wrapper" aria-labelledby="certificates-heading">
             <div className="certificates">
-                <h2 className="title">~ certificates</h2>
+                <h2 className="title" id="certificates-heading">~ certificates</h2>
                 <Fade cascade damping={0.18} triggerOnce>
                     <div className="certificates-carousel">
                         <button
@@ -136,7 +136,7 @@ const Certificates = () => {
                     </div>
                 </Fade>
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -1,9 +1,9 @@
 const Footer = () => {
-    return ( 
-        <div className="footer-wrapper">
-            <span>© Sanjai Arivu {new Date().getFullYear()}</span>
-        </div>
-     );
+    return (
+        <footer className="footer-wrapper">
+            <span>&copy; Sanjai Arivu {new Date().getFullYear()}</span>
+        </footer>
+    );
 }
- 
+
 export default Footer;

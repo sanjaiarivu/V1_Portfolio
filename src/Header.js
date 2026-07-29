@@ -5,22 +5,22 @@ import ResumeIcon from "@mui/icons-material/Description";
 const Header = () => {
     return ( 
         <div className="header-wrapper">
-        <div className="header">
+        <header className="header">
           <div className="nav">
-            <span onClick={() => {window.scrollTo(0, 0)}}>Sanjai Arivu</span>
+            <a href="#home" aria-label="Sanjai Arivu home">Sanjai Arivu</a>
           </div>
-          <div className="links">
-            <a href="https://linkedin.com/in/sanjai-arivu" target="_blank" rel='noreferrer'>
+          <nav className="links" aria-label="Social links">
+            <a href="https://linkedin.com/in/sanjai-arivu" target="_blank" rel='noreferrer' aria-label="Sanjai Arivu on LinkedIn">
               <LinkedInIcon className='icon'/>          
             </a>
-            <a href="https://github.com/sanjaiarivu" target="_blank" rel='noreferrer'>
+            <a href="https://github.com/sanjaiarivu" target="_blank" rel='noreferrer' aria-label="Sanjai Arivu on GitHub">
               <GitHubIcon className='icon'/>          
             </a>
-            <a href="/resume.pdf" target="_blank" rel='noreferrer'>
+            <a href="/resume.pdf" target="_blank" rel='noreferrer' aria-label="Download Sanjai Arivu's resume">
               <ResumeIcon className='icon'/>
             </a>
-          </div>
-        </div>
+          </nav>
+        </header>
       </div>
 
     );

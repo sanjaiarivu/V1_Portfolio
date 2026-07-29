@@ -40,10 +40,10 @@ const Experience = () => {
     const [current, setCurrent] = useState(0)
 
     return (
-        <div className="table-wrapper">
+        <section className="table-wrapper" aria-labelledby="experience-heading">
             <Fade direction='left' distance={"30px"}>
                 <div className="xp">
-                    <h2 className="title">~ experience</h2>
+                    <h2 className="title" id="experience-heading">~ experience</h2>
                     <div className="jobs-area">
                         <div className="selector">
                             {defaultTexts.map((item, index) => (
@@ -81,7 +81,7 @@ const Experience = () => {
                     </div>
                 </div>
             </Fade>
-        </div>
+        </section>
     );
 }
 

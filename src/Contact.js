@@ -47,9 +47,9 @@ const Contact = () => {
   };
 
   return ( 
-        <div className="contact-wrapper">
+        <section className="contact-wrapper" aria-labelledby="contact-heading">
                 <div className="contact">
-                <h2 className="title">~ contact</h2>
+                <h2 className="title" id="contact-heading">~ contact</h2>
                     <div className='contact-texts'>
                         <span className="main-title" style={{fontWeight: '700'}}>contact me!</span>
                         <span className='subtitle' style={{fontSize: '27px'}}>Let's <span className="orange">create</span> something together.</span>
@@ -103,7 +103,7 @@ const Contact = () => {
                         </form>
                     </div>
                 </div>
-        </div>
+        </section>
      );
 }
  

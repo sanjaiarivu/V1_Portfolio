@@ -3,11 +3,11 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
     return (
-        <div className="home-wrapper">
+        <section className="home-wrapper" id="home" aria-labelledby="home-heading">
             <div className="home">
                 <Fade direction="down">
                     <div className="texts">
-                        <span className="main-title">
+                        <h1 className="main-title" id="home-heading">
                             <Typewriter
                                 onInit={(typewriter) => {
                                 typewriter
@@ -17,13 +17,13 @@ const Home = () => {
                                 .start();
                             }}
                             />
-                        </span>
+                        </h1>
                         <span className='subtitle'>I like to build things.</span>
                         <span className='main-description'>Full Stack Developer and Computer Science student. Passionate about technology. I'm always trying to learn something new.</span>
                     </div>
                 </Fade>
             </div>     
-        </div>
+        </section>
     );
 }
  

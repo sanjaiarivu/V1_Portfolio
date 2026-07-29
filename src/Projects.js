@@ -150,27 +150,27 @@ const Projects = () => {
     ]
 
     return (
-        <div className="projects-wrapper" style={{ overflow: 'hidden' }}>
+        <section className="projects-wrapper" style={{ overflow: 'hidden' }} aria-labelledby="projects-heading">
             <div className="projects">
-                <h2 className="title">~ projects</h2>
+                <h2 className="title" id="projects-heading">~ projects</h2>
                 <div className="projects-area">
                     {
                         projectsInfos.map((item, index) => (
-                            <div className="project-container">
+                            <article className="project-container" key={item.title}>
                                 {(index % 2 === 0
                                     &&
                                     <LeftProject item={item} />)
                                     ||
                                     <RightProject item={item} />
                                 }
-                            </div>
+                            </article>
                         ))
                     }
                 </div>
 
                 <MinorProjects projects={minorProjects} />
             </div>
-        </div>
+        </section>
     );
 }
 
@@ -220,7 +220,7 @@ const LeftProject = (props) => {
     return (
         <Fade style={{ width: '100%', height: '100%' }} direction='right' distance={"30px"}>
             <div className="left-project">
-                <div className="project-image-wrapper"><img src={item.photo} alt="" /><div className="grainy" /></div>
+                <div className="project-image-wrapper"><img src={item.photo} alt={`${item.title} project preview`} /><div className="grainy" /></div>
                 <div className="left-project-description">
                     <div className="orange">{item.title}</div>
                     <span>{item.description}</span>
@@ -294,7 +294,7 @@ const RightProject = (props) => {
     return (
         <Fade style={{ width: '100%', height: '100%' }} direction='left' distance={"30px"}>
             <div className="right-project">
-                <div className="project-image-wrapper"><img src={item.photo} alt="" /><div className="grainy" /></div>
+                <div className="project-image-wrapper"><img src={item.photo} alt={`${item.title} project preview`} /><div className="grainy" /></div>
                 <div className="right-project-description">
                     <div className="orange">{item.title}</div>
                     <span>{item.description}</span>

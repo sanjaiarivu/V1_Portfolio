@@ -33,10 +33,10 @@ const Studies = () => {
 
 
     return (
-        <div className="table-wrapper">
+        <section className="table-wrapper" aria-labelledby="education-heading">
             <Fade direction='right' distance={"30px"}>
                 <div className="studies">
-                    <h2 className="title">~ studies</h2>
+                    <h2 className="title" id="education-heading">~ education</h2>
                     <div className="studies-area">
                         <div className="selector">
                             {defaultTexts.map((item, index) => (
@@ -74,7 +74,7 @@ const Studies = () => {
                     </div>
                 </div>
             </Fade>
-        </div>
+        </section>
     );
 }
 
